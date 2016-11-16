@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">   
+	<meta name="viewport" content="min-width=device-width; initial-scale=1.0; maximum-scale=2.0;">		
+	
+	<!-- <meta http-equiv="expires" content="0"> -->
+	<!-- <meta http-equiv="pragma" content="no-cache">	    -->
+
+	<meta name="author" content="Victor Alexeev" />
+	<meta name="copyright" content="Victor Alexeev" />
+	<meta name="description" content="Пример использования HTML5 тега canvas">
+	<meta name="keywords" content="HTML5, CSS3, canvas, tag, example, sample, пример">
+	
+   <title>HTML5 example. tag canvas</title> 
+	
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,400italic,700italic,700' rel='stylesheet' type='text/css'>
+	
+	<link rel="stylesheet" type="text/css" href="css/Html5DotsAnim.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/Html5DotsAnim.min.css"> -->
+	
+	<!-- <script type="text/javascript" src="scripts/jquery-1.10.2.min.js"></script> -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	
+	<script type="text/javascript" src="scripts/Html5DotsAnim.js"></script>
+	<!-- <script type="text/javascript" src="scripts/Html5DotsAnim.min.js"></script> -->
+	
+	<script>
+		/*
+		Firefox = navigator.userAgent.indexOf("Firefox") >= 0;
+		Opera = navigator.userAgent.indexOf("Opera") >= 0;
+		IE = navigator.userAgent.indexOf("IE") >= 0;
+		Chrome = navigator.userAgent.indexOf("Chrome") >= 0;
+		if(Chrome) document.write("<link rel="stylesheet" href="css/chrome.css" type="text/css">");
+		if(IE) document.write("<link rel="stylesheet" href="css/ie.css" type="text/css">");
+		if(Firefox) document.write("<link rel="stylesheet" href="css/firefoxonly.css" type="text/css">");
+		if(Opera) document.write("<link rel="stylesheet" href="css/opera.css" type="text/css">");
+		else document.write("<link rel="stylesheet" href="css/style.css" type="text/css">");
+		*/
+	</script>	
+  </head>
+  <body>
+	<div id="outer">
+		
+		<div id="canvasContainer">
+			<p class="label"><span class="site__title">HTML5</span> тег <span class="site__title">canvas</span> и анимация на нем</p> 
+			<p class="label">Фича с мышью: <span class="site__title">нажмите и удерживайте кнопку мыши</span> на холсте</p>
+		
+			<!-- <canvas id="mainCanvas" width="1000" height="560"> -->
+			<canvas id="mainCanvas" width="640" height="640">
+                <h1>Liquid Particles</h1>
+                <h2>An interactive experiment / game using HTML5</h2>
+                You'll need a modern browser like
+                <a href="http://www.apple.com/safari">Safari</a>,
+                <a href="https://www.google.com/chrome">Chrome</a>,
+                <a href="http://www.mozilla.org/">Firefox</a>,
+                <a href="http://www.opera.com/">Opera</a>, or
+                <a href="http://www.microsoft.com/ie">Internet Explorer 9+</a>
+			</canvas>
+			
+			<div id="output">
+				<form>
+					<!-- <label id="lbl_balls">Настройки:</label> -->
+					
+					<div class="balls_option tooltip2">
+						<span class="tooltiptext">Select amount of balls</span>
+						<select id="sel_balls_count" class="input input--dropdown">
+							<option value="0" disabled>Balls Amount</option>
+
+							<option value="50">50</option>
+							<option value="100">100</option>
+							<option value="200">200</option>
+							<option value="400">400</option>
+							<option value="600">600</option>
+							<option value="800">800</option>
+							<option value="1000">1000</option>
+						</select>
+						<br>
+						<label id="lbl_balls_count">000</label>
+					</div>
+
+					<div class="balls_option tooltip2">
+						<span class="tooltiptext">Select initial ball radius</span>
+						<select id="sel_balls_radius" class="input input--dropdown">
+							<option value="0" disabled>Ball Radius</option>
+
+							<option value="4">4</option>
+							<option value="6">6</option>
+							<option value="8">8</option>
+							<option value="10">10</option>
+							<option value="12">12</option>
+							<option value="14">14</option>
+							<option value="16">16</option>
+							<option value="18">18</option>
+							<option value="20">20</option>
+						</select>
+						<br>
+						<label id="lbl_balls_radius">8</label>
+					</div>
+
+					<div class="balls_option tooltip2">
+						<span class="tooltiptext">Select loop time for animation</span>
+						<select id="sel_loop_time" class="input input--dropdown">
+							<option value="0" disabled>Loop Time</option>
+
+							<option value="50">50</option>
+							<option value="44">44</option>
+							<option value="39">39</option>
+							<option value="33">33</option>
+							<option value="27">27</option>
+							<option value="22">22</option>
+							<option value="18">18</option>
+						</select>
+						<br>
+						<label id="lbl_loop_time">33</label>
+					</div>
+					
+					<a id="but_anim" class="butt site__title">Reset</a>
+				</form>	
+			</div>
+			<br><br><br>
+		</div>
+		<br><br><br>
+		
+	</div>
+</body>
+</html>
