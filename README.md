@@ -3,4 +3,4 @@
 <br>
 This example based on <a href="http://spielzeugz.de/html5/liquid-particles/">liquid-particles</a>.
 
-Take a look: <a href="http://u123.webutu.com/Html5DotsAnim/Html5DotsAnim.html">DEMO PAGE</a>.
+Take a look: <a href="http://w55.webutu.com/Html5DotsAnim/Html5DotsAnim.html">DEMO PAGE</a>.
