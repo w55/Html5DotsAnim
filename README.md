@@ -6,6 +6,6 @@ This example based on <a href="http://spielzeugz.de/html5/liquid-particles/">liq
 Take a look: <a href="http://w55.webutu.com/Html5DotsAnim/Html5DotsAnim.html">DEMO PAGE</a>.
 
 <hr>
-<img width="500" src="Screenshots/screenshot-1.jpg" alt="screenshot-1" />
+<img width="500" src="Screenshots/screenshot-2.jpg" alt="screenshot-2" />
 <hr>
 This example uses HTML5, CSS3 and JQuery.
